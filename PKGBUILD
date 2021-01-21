@@ -372,6 +372,7 @@ build () {
     if [ "$_compiler" = "clang" ]; then
       export CC="clang"
       export CXX="clang++"
+	  ulimit -n 8192
     else
       export CC="gcc"
       export CXX="g++"
